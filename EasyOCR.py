@@ -37,6 +37,7 @@ for i in result :
   draw.rectangle(((x, y), (x+w, y+h)), outline=(1, 1, 1), width=4)
 
 img_save = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+
 # 이미지 저장
 cv2.imwrite(image_save_path, img_save)
 
