@@ -55,7 +55,6 @@ for field in result['images'][0]['fields']:
 
     print(text)
 
-
 print(f'인식된 텍스트의 총 개수: {text_count}개')
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 plt.figure(figsize=(12, 12))
