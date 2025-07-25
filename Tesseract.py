@@ -13,7 +13,6 @@ import pandas as pd
 path = ''
 image = cv2.imread(path)
 
-
 # OCR 실행
 data = pytesseract.image_to_data(image, lang='kor', output_type=pytesseract.Output.DATAFRAME)
 
@@ -32,7 +31,6 @@ for _, row in data.iterrows():
   #print(f"인식된 텍스트: {row['text']}")
 
 print(f"인식된 텍스트 개수: {count}")
-
 
 plt.figure(figsize=(20, 10))
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))  # OpenCV는 BGR이므로 RGB로 변환
