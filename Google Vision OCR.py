@@ -15,6 +15,7 @@ client = vision.ImageAnnotatorClient()
 
 # 이미지 경로
 image_path = ""
+
 # 저장될 이미지 파일명
 output_image_path = ""
 
